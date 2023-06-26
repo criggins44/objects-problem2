@@ -6,20 +6,33 @@ then write a JavaScript function that takes in an array and console logs
 the first and last names of all the people.
 */
 
-let people = {
+let arrayOfPeople = [
+		
+		{
+			'first': 'Bruce',
+			'last': 'Wayne',
+			'age': 35,
+		},
 
-	'Clark':{
-		'last': 'Kent',
-		'age': 35,
-	},
-	
-	'Peter':{
-		'last': 'Parker',
-		'age': 16,
-	},
+		{
+			'first': 'Peter',
+			'last': 'Parker',
+			'age': 17,
+		},
 
-	'Bruce': {
-		'last': 'Wayne',
-		'age': 35,
-	},
+		{
+			'first': 'Clark',
+			'last': 'Kent',
+			'age': 16,
+		},
+
+	];
+
+function displayNameInfo(arrayOfObjects) {
+
+    arrayOfObjects.forEach(function(a) {
+        console.log(a.first + ' ' + a.last)
+    });
 }
+
+displayNameInfo(arrayOfPeople);
