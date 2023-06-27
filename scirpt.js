@@ -44,21 +44,14 @@ const arrayOfCars = [
 			model: 'Tundra',
 		},
 	]
-/*
-function displayNameInfo(array) {
-
-    array.forEach(function(a) {
-        console.log(a.first + ' ' + a.last)
-    });
-}
-
-displayNameInfo(arrayOfPeople);
-*/
 
 myFunction = array => {
 
 	for (i = 0; i< array.length; i++){
 		console.log(array[i].make + " " + array[i].model);
 	}
+//loops through each object in the array, focusing on the specified key
+//combines the two keys and logs the result
+	
 }
 console.log(myFunction(arrayOfCars));
