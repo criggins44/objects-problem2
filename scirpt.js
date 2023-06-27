@@ -28,11 +28,21 @@ let arrayOfPeople = [
 
 	];
 
-function displayNameInfo(arrayOfObjects) {
+/*
+function displayNameInfo(array) {
 
-    arrayOfObjects.forEach(function(a) {
+    array.forEach(function(a) {
         console.log(a.first + ' ' + a.last)
     });
 }
 
 displayNameInfo(arrayOfPeople);
+*/
+
+myFunction = array => {
+
+	for (i = 0; i< array.length; i++){
+		console.log(array[i].first + " " + array[i].last);
+	}
+}
+console.log(myFunction(arrayOfPeople));
