@@ -6,7 +6,7 @@ then write a JavaScript function that takes in an array and console logs
 the first and last names of all the people.
 */
 
-let arrayOfPeople = [
+const arrayOfPeople = [
 		
 		{
 			'first': 'Bruce',
@@ -28,6 +28,22 @@ let arrayOfPeople = [
 
 	];
 
+const arrayOfCars = [
+		{
+			make: 'Dodge',
+			model: 'Ram',
+		},
+
+		{
+			make: 'Mercedes',
+			model: 'E-Class',
+		},
+
+		{
+			make: 'Toyota',
+			model: 'Tundra',
+		},
+	]
 /*
 function displayNameInfo(array) {
 
@@ -42,7 +58,7 @@ displayNameInfo(arrayOfPeople);
 myFunction = array => {
 
 	for (i = 0; i< array.length; i++){
-		console.log(array[i].first + " " + array[i].last);
+		console.log(array[i].make + " " + array[i].model);
 	}
 }
-console.log(myFunction(arrayOfPeople));
+console.log(myFunction(arrayOfCars));
