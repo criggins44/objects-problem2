@@ -45,13 +45,13 @@ const arrayOfCars = [
 		},
 	]
 
-myFunction = array => {
+createFullNames = array => {
 
 	for (i = 0; i< array.length; i++){
 		console.log(array[i].make + " " + array[i].model);
 	}
 //loops through each object in the array, focusing on the specified key
 //combines the two keys and logs the result
-	
+
 }
-console.log(myFunction(arrayOfCars));
+console.log(createFullNames(arrayOfCars));
